@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="heart-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём всех влюблённых! Солнышко моё :D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(145deg, #fff5f7 0%, #ffefe6 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #d44e6c;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 0 #ffe0e5;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #b45f5f;
+            margin-bottom: 50px;
+            font-weight: 400;
+            background: rgba(255, 240, 235, 0.7);
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 10px rgba(255, 140, 140, 0.15);
+        }
+
+        /* Сетка для котиков */
+        .cats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .cat-card {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 40px 40px 30px 30px;
+            padding: 25px 20px 30px;
+            box-shadow: 0 25px 40px -10px rgba(255, 150, 150, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: transform 0.25s ease;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-12px);
+        }
+
+        .image-wrapper {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(241, 124, 144, 0.3);
+            background: #ffe6e6;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .cat-card h2 {
+            font-size: 2rem;
+            margin: 15px 0 5px;
+        }
+
+        .cat-card p {
+            font-size: 1.3rem;
+            color: #ab4f4f;
+            background: #fee9e9;
+            padding: 8px 16px;
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        /* Индивидуальные цвета */
+        .cat-card.strawberry h2 {
+            color: #ce3b5e;
+        }
+        .cat-card.mandarin h2 {
+            color: #e07c2c;
+        }
+
+        /* Валентинка */
+        .valentine-message {
+            margin: 60px 0 30px;
+            background: #fff0e7;
+            border-radius: 60px;
+            padding: 40px 30px;
+            border: 3px dashed #ffb3b3;
+            position: relative;
+        }
+
+        .valentine-message p {
+            font-size: 2rem;
+            color: #a14242;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .valentine-message span {
+            background: #ffd3d3;
+            padding: 5px 18px;
+            border-radius: 40px;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .heart {
+            color: #ff3b6f;
+            font-size: 4rem;
+            line-height: 1;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #b18888;
+            font-size: 1.1rem;
+        }
+
+        /* Адаптация под экраны */
+        @media (max-width: 700px) {
+            h1 { font-size: 2.2rem; }
+            .subtitle { font-size: 1.2rem; }
+            .valentine-message p { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❤️ С 14-м Февраля! И днём всех влюблённых! </h1>
+        <div class="subtitle">И с годовщиной в 3 месяца :D</div>
+
+        <div class="cats-grid">
+            <!-- Карточка Клубничного котика -->
+            <div class="cat-card strawberry">
+                <div class="image-wrapper">
+                    <img src="images/Nika.jpg" alt="Котик с клубничкой" onerror="this.onerror=null; this.src='https://placekitten.com/300/300?image=1'">
+                </div>
+                <h2>🍓 КОТИК-КЛУБНИЧКА</h2>
+                <p>Солнышко</p>
+            </div>
+
+            <!-- Карточка Мандаринового котика -->
+            <div class="cat-card mandarin">
+                <div class="image-wrapper">
+                    <img src="images/Me.jpg" alt="Котик с мандаринкой" onerror="this.onerror=null; this.src='https://placekitten.com/300/300?image=3'">
+                </div>
+                <h2>🍊 КОТИК-МАНДАРИНКА</h2>
+                <p> 0_0 </p>
+            </div>
+        </div>
+
+        <div class="valentine-message">
+            <p>
+                <span>🐱</span> Пусть каждый раз смотря на эту Валентинку ты вспоминала меня <span>🍓</span><br>
+                <span>🐈</span> Мандарин <span>🍊</span>
+            </p>
+            <div class="heart">💖</div>
+        </div>
+
+        <footer>
+            C любовью, пришла к Дане
+        </footer>
+    </div>
+</body>
+</html>
